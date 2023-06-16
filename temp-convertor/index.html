@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Temperature-Convertor</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="container">
+        <h2>Temperature Convertor</h2>
+
+        <div class="degrees font-style">
+          <label class="label-text">Degrees</label>
+          <input
+            type="number"
+            name="temperature"
+            id="temperature"
+            placeholder="0"
+          />
+          <label class="label-text">Type</label>
+          <select name="temp-diff" id="temp-diff" class="font-style">
+            <option value="cel">Celcious</option>
+            <option value="feh">Fehrenheit</option>
+          </select>
+        </div>
+
+        <br />
+        <div class="btn">
+          <button id="btn" onclick="calculate()">Convert</button>
+        </div>
+        <div class="result font-style">
+          <label class="label-text">Result</label>
+          <p id="result-contain"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
